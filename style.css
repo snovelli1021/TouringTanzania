@@ -1,0 +1,52 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+  height: 8%;
+}
+
+h1 {
+  color: black;
+}
+
+/* Styles the hot air balloon basket foreground overlay. */
+.esri-overlay-surface {
+  background-image: url("./HotAirBalloonEdit.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position-x: 65%;
+  background-position-y: 120%;
+}
+
+/* Additional styling for esri components. */
+#viewDiv {
+  height: 92%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#optionsDiv {
+  position: absolute;
+  bottom: 17px;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1;
+  text-align: center;
+}
+
+button {
+  background: white;
+  padding: 7px;
+  border: 1px solid #005e95;
+  font-size: 0.9em;
+  margin: 5px;
+  color: #005e95;
+}
+
+button:hover {
+  background: #005e95;
+  color: white;
+  cursor: pointer;
+}

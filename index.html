@@ -4,46 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Touring Tanzania</title>
-  <style>
-    html,
-    body,
-    #viewDiv {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-      
-    }
-
-    #optionsDiv {
-      position: absolute;
-      bottom: 17px;
-      width: 100%;
-      padding: 20px 0;
-      z-index: 1;
-      text-align: center;
-    }
-
-    button {
-      background: white;
-      padding: 7px;
-      border: 1px solid #005e95;
-      font-size: 0.9em;
-      margin: 5px;
-      color: #005e95;
-    }
-    
-    button:hover {
-        background: #005e95;
-        color: white;
-        cursor: pointer;
-      }
-   
-  </style>
   
   <link rel="stylesheet" href=https://js.arcgis.com/4.26/esri/themes/light/main.css>
+  <link rel="stylesheet" href=./style.css>
+
+</head>
+
+<body>
+  <!-- Header and body elements. -->
+  <header id=" header">
+    <h1>Tanzania Tour</h1>
+  </header>
+  <div id="viewDiv"></div>
+
+  <div id="optionsDiv">
+    <button id="goToTarangire">Fly to Tarangire</button>
+  </div>
+
+  <!-- Imported Javascript that uses ArcGIS API and pulls content items from ArcGIS Online. -->
   <script src=https://js.arcgis.com/4.26></script>
-  
   <script>
     require([
       "esri/config",
@@ -63,7 +42,7 @@
         map: webscene
       });
       const legend = new Legend({
-        view: view
+        view: view,
       });
       view.ui.add(legend, "top-right");
   
@@ -78,8 +57,6 @@
             console.error(error);
           }
         }
-     
-    
     
     document.getElementById("goToTarangire").addEventListener("click", () => {
           view
@@ -105,14 +82,6 @@
     });
       
   </script>
-
-</head>
-
-<body>
-  <div id="optionsDiv">
-    <button id="goToTarangire">Fly to Tarangire</button>
-  </div>
-  <div id="viewDiv"></div>
 </body>
 
 </html>
