@@ -19,6 +19,9 @@
 
   <div id="optionsDiv">
     <button id="goToTarangire">Fly to Tarangire</button>
+    <button id="goToLakeManyara">Fly to Lake Manyara</button>
+    <button id="goToNgorongoro">Fly to Ngorongoro</button>
+    <button id="goToSerengeti">Fly to Serengeti</button>
   </div>
 
   <!-- Imported Javascript that uses ArcGIS API and pulls content items from ArcGIS Online. -->
@@ -58,7 +61,7 @@
           }
         }
     
-    document.getElementById("goToTarangire").addEventListener("click", () => {
+      document.getElementById("goToTarangire").addEventListener("click", () => {
           view
             .goTo(
             {
@@ -79,7 +82,70 @@
             )
            .catch(catchAbortError);
     });
+      document.getElementById("goToLakeManyara").addEventListener("click", () => {
+          view
+            .goTo(
+            {
+                position: {
+                  x: 35.827952,
+                  y: -3.364050,
+                  z: 1500,
+                  spatialReference: {
+                    wkid: 4326
+                  }
+                },
+                heading: 190,
+                tilt: 80
+              },
+              {
+                speedFactor: 0.5,
+              }
+            )
+           .catch(catchAbortError);
     });
+      document.getElementById("goToNgorongoro").addEventListener("click", () => {
+          view
+            .goTo(
+            {
+                position: {
+                  x: 35.47842,
+                  y: -3.319681,
+                  z: 4000,
+                  spatialReference: {
+                    wkid: 4326
+                  }
+                },
+                heading: 30,
+                tilt: 85
+              },
+              {
+                speedFactor: 0.5,
+              }
+            )
+           .catch(catchAbortError);
+    });
+      document.getElementById("goToSerengeti").addEventListener("click", () => {
+          view
+            .goTo(
+            {
+                position: {
+                  x: 34.698257,
+                  y: -2.41295,
+                  z: 2100,
+                  spatialReference: {
+                    wkid: 4326
+                  }
+                },
+                heading: 355,
+                tilt: 75
+              },
+              {
+                speedFactor: 0.5,
+              }
+            )
+           .catch(catchAbortError);
+    });
+  });
       
   </script>
 </body>
