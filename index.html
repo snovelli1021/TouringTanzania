@@ -7,14 +7,14 @@
   
   <link rel="stylesheet" href=https://js.arcgis.com/4.26/esri/themes/light/main.css>
   <link rel="stylesheet" href=./style.css>
-
 </head>
 
 <body>
   <!-- Header and body elements. -->
-  <header id=" header">
-    <h1>Tanzania Tour</h1>
+  <header id="header">
+    <h1>Touring Tanzania</h1>
   </header>
+
   <div id="viewDiv"></div>
 
   <div id="optionsDiv">
@@ -49,6 +49,7 @@
       });
       view.ui.add(legend, "top-right");
   
+  //  Function that sets the camera position for each location on btn click.   
    function shiftCamera(deg) {
           const camera = view.camera.clone();
           camera.position.longitude += deg;
@@ -60,7 +61,8 @@
             console.error(error);
           }
         }
-    
+
+  //  Sets the camera position for Tarangire.   
       document.getElementById("goToTarangire").addEventListener("click", () => {
           view
             .goTo(
@@ -82,6 +84,8 @@
             )
            .catch(catchAbortError);
     });
+
+   //  Sets the camera position for Lake Manyara.     
       document.getElementById("goToLakeManyara").addEventListener("click", () => {
           view
             .goTo(
@@ -103,6 +107,8 @@
             )
            .catch(catchAbortError);
     });
+
+   //  Sets the camera position for Ngorongoro.     
       document.getElementById("goToNgorongoro").addEventListener("click", () => {
           view
             .goTo(
@@ -124,6 +130,8 @@
             )
            .catch(catchAbortError);
     });
+
+   //  Sets the camera position for Serengeti.     
       document.getElementById("goToSerengeti").addEventListener("click", () => {
           view
             .goTo(

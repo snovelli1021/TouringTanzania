@@ -1,13 +1,30 @@
+html,
 body {
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0;
+  margin: 0;
 }
+
 #header {
-  height: 8%;
+  display: flex;
+  height: 60px;
+  background-color: rgb(151, 97, 31);
+  background-image: url("./PawPrints.png") !important;
+  background-repeat: space;
+  background-size: 205px;
+  background-position: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 h1 {
-  color: black;
+  line-height: 60px;
+  height: 60px;
+  color: #ddb858;
+  background-color: rgb(151, 97, 31);
+  text-shadow: 2px 1px rgb(61, 38, 1);
+  padding-left: 1%;
+  padding-right: 4%;
+  margin-top: auto;
 }
 
 /* Styles the hot air balloon basket foreground overlay. */
