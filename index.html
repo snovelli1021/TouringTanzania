@@ -10,10 +10,8 @@
 </head>
 
 <body>
-  <!-- Header and body elements. -->
-  <header id="header">
-    <h1>Touring Tanzania</h1>
-  </header>
+ 
+  <header id="header"></header>
 
   <div id="viewDiv"></div>
 
@@ -31,9 +29,10 @@
       "esri/config",
       "esri/WebScene",
       "esri/views/SceneView",
-      "esri/widgets/Legend"], 
+      "esri/widgets/Legend",
+      "esri/widgets/Home"], 
             
-      function(esriConfig, WebScene, SceneView, Legend) {
+      function(esriConfig, WebScene, SceneView, Legend, Home) {
       esriConfig.apiKey = "AAPK3d385025f1514c549fedaa242176b40cb9aMQbY5K7MiwozMOxNPzYgoPwKH1QM9T9NAksH86PMlvWevxJUckoF2hnI94iXN";
       const webscene = new WebScene({
         portalItem: {
@@ -48,6 +47,9 @@
         view: view,
       });
       view.ui.add(legend, "top-right");
+
+      const homeBtn = new Home({view: view})
+      view.ui.add(homeBtn, "top-left");
   
   //  Function that sets the camera position for each location on btn click.   
    function shiftCamera(deg) {
@@ -114,14 +116,14 @@
             .goTo(
             {
                 position: {
-                  x: 35.47842,
-                  y: -3.319681,
-                  z: 4000,
+                  x: 35.44842,
+                  y: -3.230081,
+                  z: 3000,
                   spatialReference: {
                     wkid: 4326
                   }
                 },
-                heading: 30,
+                heading: 70,
                 tilt: 85
               },
               {
