@@ -16,30 +16,48 @@ body {
   margin-bottom: auto;
 }
 
+/* Styles the calcite-shell that holds esri components. */
+#shell {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  padding: 1% 0.5%;
+  bottom: 0;
+  background-color: rgb(151, 97, 31);
+}
+
 /* Styles the hot air balloon basket foreground overlay. */
 .esri-overlay-surface {
   background-image: url("./HotAirBalloon.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover;
-  background-position-x: 65%;
-  background-position-y: 120%;
+  background-position-x: 6%;
+  background-position-y: 12%;
 }
 
 /* Additional styling for esri components. */
 #viewDiv {
-  height: 92%;
-  width: 100%;
+  float: right;
+  height: 100%;
+  width: 79%;
   position: absolute;
   bottom: 0;
+  right: 0;
+}
+
+.esri-legend {
+  max-width: 168px !important;
 }
 
 #optionsDiv {
+  float: right;
   position: absolute;
-  bottom: 17px;
-  width: 100%;
-  padding: 20px 0;
-  z-index: 1;
+  bottom: 20px;
+  width: 55%;
+  z-index: 1100;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button {
