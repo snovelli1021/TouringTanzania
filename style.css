@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: center;
+  padding-top: 0.5%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -31,8 +32,8 @@ body {
   background-image: url("./HotAirBalloon.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover;
-  background-position-x: 6%;
-  background-position-y: 12%;
+  background-position-x: 30%;
+  background-position-y: 100%;
 }
 
 /* Additional styling for esri components. */
@@ -73,4 +74,12 @@ button:hover {
   background: #005e95;
   color: white;
   cursor: pointer;
+}
+
+.footer {
+  color: #ddb858;
+  position: sticky;
+  background-color: rgb(151, 97, 31);
+  text-align: center;
+  padding-bottom: 1%;
 }
