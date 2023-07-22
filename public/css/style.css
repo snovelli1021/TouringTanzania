@@ -8,7 +8,7 @@ body {
   display: flex;
   height: 60px;
   background-color: rgb(151, 97, 31);
-  background-image: url("../TouringTanzania.png") !important;
+  background-image: url("../assets/TouringTanzania.png") !important;
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: center;
@@ -29,7 +29,7 @@ body {
 
 /* Styles the hot air balloon basket foreground overlay. */
 .esri-overlay-surface {
-  background-image: url("../HotAirBalloon.png") !important;
+  background-image: url("../assets/HotAirBalloon.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover;
   background-position-x: 30%;

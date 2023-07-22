@@ -33,7 +33,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 No tests are currently required to run this application.
     
 ## Preview:
-![Screenshot.jpg](./assets/Screenshot.jpg)
+![Screenshot.jpg](./public/assets/Screenshot.jpg)
 
 ## Deployment
 
