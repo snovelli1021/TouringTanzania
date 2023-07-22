@@ -9,7 +9,7 @@
   <script src=https://js.arcgis.com/4.27></script>
   <script type="module" src="https://js.arcgis.com/calcite-components/1.4.2/calcite.esm.js"></script>
   <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.4.2/calcite.css" />
-  <link rel="stylesheet" href=./style.css>
+  <link rel="stylesheet" href="./assets/CSS/style.css">
 
 </head>
 
@@ -48,12 +48,11 @@
       "esri/config",
       "esri/WebScene",
       "esri/views/SceneView",
-      "esri/widgets/Legend",
       "esri/widgets/Home",
       "esri/widgets/Features",
       "esri/core/reactiveUtils"], 
             
-      function(esriConfig, WebScene, SceneView, Legend, Home, Features, reactiveUtils) {
+      function(esriConfig, WebScene, SceneView, Home, Features, reactiveUtils) {
       esriConfig.apiKey = "AAPK3d385025f1514c549fedaa242176b40cb9aMQbY5K7MiwozMOxNPzYgoPwKH1QM9T9NAksH86PMlvWevxJUckoF2hnI94iXN";
       const webscene = new WebScene({
         portalItem: {
@@ -105,12 +104,6 @@
             }
           }
         );
-
-
-      const legend = new Legend({
-        view: view,
-      });
-      view.ui.add(legend, "top-right");
 
       const homeBtn = new Home({view: view})
       view.ui.add(homeBtn, "top-left");
