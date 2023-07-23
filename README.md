@@ -15,7 +15,7 @@
 Touring Tanzania is an application that takes you on a hot air balloon safari through wildlife parks in Tanzania. Along the way you can view photos of the animals that inhabit the region and learn a fun fact about each one you encounter. The map and data this application was build around uses the ArcGIS API for JavaScript and the banner was designed with Figma.
 
 ## Installation:
-You can clone the repository and open index.html in your browser or you can access Touring Tanzania live by clicking [here.](https://pacific-plains-13730-2a22247c3916.herokuapp.com/)
+If you are using the Node.js runtime environment and want to run this app locally clone the repository and run "*npm run start*" from your command line or you can access Touring Tanzania live by clicking [here.](https://pacific-plains-13730-2a22247c3916.herokuapp.com/)
 
 
 ## License:
